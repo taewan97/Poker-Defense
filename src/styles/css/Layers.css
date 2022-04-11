@@ -1,0 +1,166 @@
+.layers {
+  width: 100vw;
+  height: 800px;
+  position: relative;
+}
+
+.ground_layer {
+  width: 100%;
+  height: 100%;
+  /*background-image: url("/images/rpgTile000.png");*/
+  background-color: white;
+}
+
+.enemy_layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.unit_layer {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+
+  top: 80px;
+  left: 80px;
+  /*background-color: rebeccapurple;
+  opacity: 0.5;*/
+}
+
+.ally {
+  position: absolute;
+}
+
+.ally_color_aqua {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+.ally_color_black {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+.ally_color_blue {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.ally_color_fuchsia {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: fuchsia;
+}
+.ally_color_gray {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.ally_color_green {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: green;
+}
+.ally_color_lime {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lime;
+}
+.ally_color_maroon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: maroon;
+}
+.ally_color_navy {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: navy;
+}
+.ally_color_olive {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: olive;
+}
+.ally_color_purple {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: purple;
+}
+.ally_color_red {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+.ally_color_silver {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: silver;
+}
+
+.map_tile {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 7px 0 #00000025;
+}
+
+.map_tile__node {
+  background-image: url("../assets/rpgTile000.png");
+}
+
+.map_tile__path {
+  background-image: url("../assets/rpgTile001.png");
+}
+
+.enemy_layer .enemy {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background: dimgray;
+  position: absolute;
+  border-radius: 20px;
+  transition: linear 500ms;
+  animation: ease-in appearance 0.5s;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    margin-top: -40px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.make_unit_button {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 280px;
+  left: 280px;
+}
+
+.block_box {
+  font-size: 22px;
+  text-align: center;
+}
